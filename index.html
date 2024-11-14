@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav>
-
-        </nav>
-
+        <div class="title"> a marvelous website </div>
+        <nav class="nav-collapse">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
-        <div> hi </div>
-        <div> nihao </div>
 
     </main>
-
-    <footer>
-
-
-    </footer>
     
+    <footer>
+        <p> @ COMP 126 Final Project Footer </p>
+    </footer>
+
+    <script>
+        var navigation = responsiveNav(".nav-collapse", {
+            init: function () {
+                console.log("Responsive Nav Inited!");
+            },
+            open: function () {
+                console.log("Opening…");
+            },
+            close: function () {
+                console.log("Closing…");
+            }
+        });
+    </script>
+
 </body>
 </html>

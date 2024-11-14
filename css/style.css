@@ -140,6 +140,7 @@ li a:hover, li a:focus{
 /* Main Body */
 main{
     background-color: rgb(255, 255, 180);
+    height: 500px;
 }
 
 
@@ -186,3 +187,8 @@ footer{
     .nav-collapse{
         width: 50%;
     }
+
+    header{
+        display: flex;
+    }
+}

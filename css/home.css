@@ -1,20 +1,19 @@
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: auto;
     width: 100%;
 }
 
 .trending{
-    height: 650px;
+    height: 1100px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0;
 }
 
 .trendword{
@@ -26,19 +25,21 @@ main{
 }
 
 .trendcontent{
-    height: 280px;
+    height: 300px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
+    border-radius: 15px;
 }
 
 .trendpic{
     height: 200px;
     width: 90%;
     background-color: blue;
+    border-radius: 15px;
 }
 
 .trendcontent h1{
@@ -51,4 +52,86 @@ main{
     align-self: flex-start;
     padding: 0 30px;
     font-size: 16px;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 90%;
+}
+
+.cat1, .cat2, .cat3, .cat4{
+    width: 20vw; /* Change in desktop size! */
+    height: 20vw; /* Change in desktop size! */
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform ease 0.5s;
+}
+
+.categories a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat1:focus, .cat2:focus, .cat:focus, .cat4:focus{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.forum{
+    height: 500px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
+    border-radius: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.forum h1{
+    font-size: 30px;
+}
+
+.forum p{
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.forumpics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 90%;
+}
+
+.pic1, .pic2{
+    height: 100%;
+    width: 45%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.button{
+    background-color: brown;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    transition: transform ease 0.5s;
+}
+
+.button:hover, .button:focus{
+    font-weight: bold;
+    transform: scale(1.1);
 }

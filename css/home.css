@@ -1,0 +1,54 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.trending{
+    height: 650px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.trendword{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.trendcontent{
+    height: 280px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
+}
+
+.trendpic{
+    height: 200px;
+    width: 90%;
+    background-color: blue;
+}
+
+.trendcontent h1{
+    align-self: flex-start;
+    padding: 0 30px;
+    font-size: 25px;
+}
+
+.trendcontent p{
+    align-self: flex-start;
+    padding: 0 30px;
+    font-size: 16px;
+}

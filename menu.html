@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
+    <link rel="common stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title> Menu </title>
+</head>
 
+<body>
+    <header>
+        <div class="title"> a marvelous website </div>
+        <nav class="nav-collapse">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+
+    </main>
+    
+    <footer>
+        <p> @ COMP 126 Final Project Footer </p>
+    </footer>
+
+    <script>
+        var navigation = responsiveNav(".nav-collapse", {
+            init: function () {
+                console.log("Responsive Nav Inited!");
+            },
+            open: function () {
+                console.log("Opening…");
+            },
+            close: function () {
+                console.log("Closing…");
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -84,7 +84,7 @@ header{
     background-color: rgb(234, 125, 81);
     padding: 10px;
     z-index: 3;
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 

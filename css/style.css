@@ -139,7 +139,7 @@ li a:hover, li a:focus{
 
 /* Main Body */
 main{
-    background-color: rgb(255, 255, 180);
+    /*background-color: rgb(255, 255, 180);*/
     height: 500px;
 }
 

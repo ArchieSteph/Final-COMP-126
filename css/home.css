@@ -1,3 +1,8 @@
+header, footer{
+    background-color: rgb(38, 38, 87);
+}
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -5,59 +10,55 @@ main{
     align-items: center;
     height: auto;
     width: 100%;
+    gap: 10px;
+    background-color: whitesmoke;
 }
 
 
-/* Top Picks */
-.trending{
-    height: 1100px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.trendword{
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
+/* HomePage */
+.homepage{
+    height: 500px;
     width: 100%;
-    text-align: center;
-}
-
-.trendcontent{
-    height: 300px;
-    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    border-radius: 15px;
+    background-image: url(/image/_DSF1435.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.trendpic{
-    height: 200px;
-    width: 90%;
-    background-color: blue;
-    border-radius: 15px;
+.hometitle{
+    color: rgb(238, 255, 0);
+    font-size: 70px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
-.trendcontent h1{
-    align-self: flex-start;
-    padding: 0 30px;
-    font-size: 25px;
-}
-
-.trendcontent p{
-    align-self: flex-start;
-    padding: 0 30px;
-    font-size: 16px;
+.homecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: rgb(238, 255, 0);
+    background-color: rgba(181, 180, 180, 0.258);
 }
 
 
 /* Categories */
+.foods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .categories{
     display: flex;
     align-items: center;
@@ -89,43 +90,148 @@ main{
     transform: scale(1.1);
 }
 
-/* Forum */
+.menu{
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px navy solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
 
-.forum{
-    height: 500px;
+.menu:hover, .menu:focus{
+    font-weight: bold;
+    border: 1px transparent solid;
+    outline: 3px navy dashed;
+}
+
+/* Appointment */
+.appointment{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(86, 201, 86);
+}
+
+.appphoto{
+    background-image: url(/image/_DSF1434.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+
+
+.applink{
+    width: 50%;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80%;
+    background-color: whitesmoke;
+}
+
+.apptitle{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.appcontent{
+    text-align: center;
     width: 90%;
+    height: 50px;
+    color: black;
+    background-color: rgba(181, 180, 180, 0.258);
+}
+
+/* About */
+.about{
+    height: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    border-radius: 15px;
+    background-image: url(/image/_DSF1426.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.abouttitle{
+    width: 100%;
+    text-align: center;
+}
+
+.abouttitle h1{
+    color: rgb(238, 255, 0);
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.abouttitle p{
+    color: rgb(230, 98, 16);
+    font-size: 30px;
+    letter-spacing: 10px;
+    width: 100%;
+}
+
+
+/* Subscribe */
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.subphoto{
+    width: 50%;
+    height: 400px;
+    background-image: url(/image/_DSF1603.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletters{
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
     margin: 20px 0;
     text-align: center;
 }
 
-.forum h1{
+.newsletters h1{
     font-size: 30px;
 }
 
-.forum p{
+.newsletters p{
     line-height: 30px;
     font-size: 16px;
 }
 
-.forumpics{
+.subpics{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 100px;
     width: 90%;
-}
-
-.pic1, .pic2{
-    height: 100%;
-    width: 45%;
-    background-color: aliceblue;
-    border-radius: 10px;
 }
 
 .button{

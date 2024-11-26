@@ -31,8 +31,9 @@ a:hover {
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 0px 0;
     text-align: center;
+    width: 100%;
 }
 
 nav ul {
@@ -55,13 +56,25 @@ nav ul li a {
 main {
     flex: 1;
     padding: 20px;
-    max-width: 800px;
+    width: 100%; 
+    max-width: none; 
     margin: 0 auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px black;
     overflow: auto;
+    overflow-x: hidden;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
 
 .content-area {
     margin-bottom: 40px;
@@ -81,7 +94,7 @@ main {
 }
 
 #featured-posts {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .form-group label {
@@ -102,14 +115,14 @@ main {
 }
 
 .form-group button {
-    background-color: #007bff;
+    background-color: #ff9500;
     color: white;
     cursor: pointer;
     border: none;
 }
 
 .form-group button:hover {
-    background-color: #0056b3;
+    background-color: #b32d00;
 }
 
 .post-card {
@@ -132,7 +145,7 @@ button {
     margin: 10px auto; 
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #ff9500;
     color: white;
     border: none;
     border-radius: 5px;
@@ -141,7 +154,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(42, 44, 165);
+    background-color: #b32d00;
 }
 
 .post-card h4 {
@@ -164,9 +177,9 @@ button:hover {
 }
 
 #forum-section {
-    margin-top: 50px; 
-    padding-top: 30px; 
-    border-top: 3px solid #ddd; 
+    margin-top: 10px; 
+    padding-top: 10px; 
+    border-top: none;
 }
 
 
@@ -205,6 +218,32 @@ button:hover {
     border-radius: 5px;
 }
 
+.reply-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    margin: 10px 0; 
+    width: 100%;
+}
+
+
+.divider-image {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-top: 5px; 
+}
+
+.divider-image1 {
+    width: 100%; 
+    height: 100px; 
+    object-fit: cover; 
+    margin-top: 5px; 
+}
+
+
 #forum-topics {
     margin-top: 20px; 
 }
@@ -213,12 +252,33 @@ button:hover {
     background-color: rgb(42, 44, 165);
 }
 
+.forum-topic {
+    margin-bottom: 20px;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 2px 0;
+    padding: 0px 0;
     margin-bottom: 0px;
     font-size: 14px;
+    width: 100%;
     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group button {
+        font-size: 14px;
+    }
+
+    .forum-topic {
+        padding: 10px;
+    }
 }

@@ -1,7 +1,12 @@
-header, footer{
-    background-color: #00153B;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
+a{
+    text-decoration: none;
+}
 
 main{
     display: flex;
@@ -17,7 +22,7 @@ main{
 
 /* HomePage */
 .homepage{
-    height: 500px;
+    height: 45vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,11 +35,14 @@ main{
 }
 
 .hometitle{
-    color: rgb(238, 255, 0);
-    font-size: 70px;
+    color: #004253;
+    -webkit-text-stroke: #f1d871 2px;
+    font-size: 8vw;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 5px;
 }
 
 .homecontent{
@@ -44,45 +52,78 @@ main{
     align-items: center;
     width: 100%;
     height: 50px;
-    color: rgb(238, 255, 0);
+    color: white;
     background-color: rgba(181, 180, 180, 0.258);
 }
 
 
 /* Categories */
 .foods{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    outline: #1ca9c9 1px solid;
+    border: #00153b 1px solid;
+    outline-offset: -10px;
+    padding: 40px 0;
 }
 
 .categories{
-    display: flex;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: 
+    "cat1 cat2"
+    "cat3 cat4";
     align-items: center;
     justify-content: space-evenly;
-    height: 200px;
     width: 90%;
+    background-color: ;
 }
 
 .cat1, .cat2, .cat3, .cat4{
-    width: 20vw; /* Change in desktop size! */
+    width: 40vw; /* Change in desktop size! */
     height: 20vw; /* Change in desktop size! */
-    background-color: aquamarine;
+    background-color: #7eeef1;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
     transition: transform ease 0.5s;
+    margin: 10px 0;
 }
 
-.categories a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+.cat1{
+    grid-area: cat1;
+    background-image: url(/image/appetizers.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cat2{
+    grid-area: cat2;
+    background-image: url(/image/entree.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cat3{
+    grid-area: cat3;
+    background-image: url(/image/dessert.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cat4{
+    grid-area: cat4;
+    background-image: url(/image/wine.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 
 .cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat1:focus, .cat2:focus, .cat:focus, .cat4:focus{
@@ -93,15 +134,20 @@ main{
 .menu{
     padding: 10px 20px;
     text-align: center;
-    border: 1px navy solid;
+    border: 1px #00153b solid;
     border-radius: 10px;
-    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.menu a{
+    color: black;
 }
 
 .menu:hover, .menu:focus{
     font-weight: bold;
     border: 1px transparent solid;
-    outline: 3px navy dashed;
+    outline: 5px #7eeef1 dashed;
+    background-color: #f1d87e;
 }
 
 /* Appointment */
@@ -111,44 +157,71 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(86, 201, 86);
+    background-image: linear-gradient(to left, #00153b 50%, #7eeef1);
 }
 
 .appphoto{
     background-image: url(/image/_DSF1434.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 30%;
     height: 100%;
 }
 
 
 .applink{
-    width: 50%;
+    width: 70%;
     margin: 20px;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     height: 80%;
     background-color: whitesmoke;
 }
 
 .apptitle{
-    color: black;
+    color: #00153b;
     font-size: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .appcontent{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     height: 50px;
-    color: black;
+    color: #00153b;
     background-color: rgba(181, 180, 180, 0.258);
+}
+
+.appbutton{
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px #00153b solid;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.appbutton a{
+    color: black;
+}
+
+.appbutton:hover, .appbutton:focus{
+    font-weight: bold;
+    background-color: #1ca9c9;
+    border: 1px transparent solid;
+    outline: 4px #f1d87e dashed;
+}
+
+.appbutton a:hover, .appbutton a:focus{
+    color: white;
 }
 
 /* About */
@@ -171,21 +244,41 @@ main{
 }
 
 .abouttitle h1{
-    color: rgb(238, 255, 0);
+    color: #1ca9c9;
+    -webkit-text-stroke: #f1d871 2px;
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 10px;
     width: 100%;
     margin-bottom: 40px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 5px;
 }
 
 .abouttitle p{
-    color: rgb(230, 98, 16);
-    font-size: 30px;
+    color: #1ca9c9;
+    font-size: 25px;
     letter-spacing: 10px;
     width: 100%;
 }
 
+.aboutbutton{
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background-color: #f1d871;
+    transition: transform 0.5s ease;
+}
+
+.aboutbutton a{
+    color: white;
+}
+
+.aboutbutton:hover, .aboutbutton:focus{
+    transform: scale(1.2);
+    color: white;
+}
 
 /* Subscribe */
 
@@ -198,7 +291,7 @@ main{
 }
 
 .subphoto{
-    width: 50%;
+    width: 30%;
     height: 400px;
     background-image: url(/image/_DSF1603.jpg);
     background-repeat: no-repeat;
@@ -207,7 +300,7 @@ main{
 
 .newsletters{
     height: 350px;
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -234,6 +327,10 @@ main{
     width: 90%;
 }
 
+.button a{
+    color: white;
+}
+
 .button{
     background-color: brown;
     text-align: center;
@@ -246,4 +343,173 @@ main{
 .button:hover, .button:focus{
     font-weight: bold;
     transform: scale(1.1);
+}
+
+/* Forum */
+.forum{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
+    background-image: url(/image/forum.webp) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.forumtitle{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forumtitle h1{
+    color: #7eeef1;
+    -webkit-text-stroke: white 2px;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+
+.forumtitle p{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 10px;
+    width: 80%;
+    line-height: 40px;
+}
+
+.forumbutton{
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background-color: #7eeef1;
+    transition: transform 0.5s ease;
+}
+
+.forumbutton:hover, .forumbutton:focus{
+    transform: scale(1.2);
+}
+
+.forumbutton a{
+    color: black;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    main{
+        width: 100%;
+        display: grid;
+        grid-column: 1.2fr 0.8fr;
+        grid-row: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "homepage homepage"
+        "foods foods"
+        "appointment appointment"
+        "about about"
+        "subscribe forum";
+    }
+
+    .homepage{
+        grid-area: homepage;
+        width: 100%;
+    }
+
+    .foods{
+        grid-area: foods;
+        gap: 40px;
+        padding: 60px 0;
+        width: 100%;
+    }
+
+    .categories{
+        width: 100%;
+        grid-column: 1fr 1fr 1fr 1fr;
+        grid-row: 1fr;
+        grid-template-areas: 
+        "cat1 cat2 cat3 cat4";
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .cat1, .cat2, .cat3, .cat4{
+        width: 22vw; /* Change in desktop size! */
+        height: 15vw; /* Change in desktop size! */
+        background-color: #7eeef1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform ease 0.5s;
+        margin: 10px 0;
+    }
+
+    .menu{
+        font-size: 1.5vw;
+    }
+
+    .appointment{
+        grid-area: appointment;
+        height: 500px;
+    }
+
+    .appphoto{
+        width: 50%;
+        height: 100%;
+    }
+
+    .applink{
+        width: 50%;
+        height: 85%;
+    }
+    
+    .apptitle{
+        font-size: 3vw;
+    }
+
+    .appbutton{
+        font-size: 1.5vw;
+    }
+
+    .about{
+        grid-area: about;
+        height: 600px;
+    }
+
+    .abouttitle h1{
+        font-size: 6vw;
+    }
+
+    .aboutbutton{
+        font-size: 1.5vw;
+    }
+
+    .subscribe{
+        grid-area: subscribe;
+        height: 500px;
+    }
+
+    .subphoto{
+        width: 50%;
+    }
+    .newsletters{
+        width: 50%;
+    }
+
+    .forum{
+        grid-area: forum;
+        height: 500px;
+    }
+
 }

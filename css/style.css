@@ -9,6 +9,10 @@ a:active, a:hover {
     outline: 0;
 }
 
+header, footer{
+    background-color: #00153B;
+}
+
 /* Nav Bar */
 @font-face {
     font-family: "responsivenav";
@@ -81,7 +85,6 @@ header{
     grid-template-columns: auto 60px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(234, 125, 81);
     padding: 10px;
     z-index: 3;
     width: auto;
@@ -123,7 +126,7 @@ header{
 
 .title{
     color: white;
-    padding: 10px;
+    padding: 1em;
     width: fit-content;
     grid-column: 1/2;
 }
@@ -146,7 +149,6 @@ main{
 
 /* Footer */
 footer{
-    background-color: rgb(234, 125, 81);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,7 +170,7 @@ footer{
     }
 
     .nav-collapse a {
-        padding: 1.02em 2em;
+        padding: 1em 2em;
         text-align: center;
         border-top: 0;
         margin: 0;
@@ -185,7 +187,7 @@ footer{
         display: none;
     }
     .nav-collapse{
-        width: 50%;
+        width: 60%;
     }
 
     header{

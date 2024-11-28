@@ -142,8 +142,9 @@ li a:hover, li a:focus{
 
 /* Main Body */
 main{
-    background-color: rgb(255, 255, 180);
-    height: 500px;
+    background-color: white;
+    height: auto;
+    width: 100%;
 }
 
 

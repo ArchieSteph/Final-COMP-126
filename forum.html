@@ -16,13 +16,15 @@
         <nav class="nav-collapse">
         <ul>
             <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     </header>
 
     <main>
         <section class="content-area" id="submission-section">
-            <h2 class="content-title">Share Your Culinary Creations!</h2>
+            <h2 class="content-title">Share Your Culinary Experiences at La Maison de Fleur!</h2>
 
             <img src="css/imageBread2.png" alt="Divider Image" class="divider-image1">
 
@@ -77,6 +79,18 @@
     </footer>
 
     <script>
+
+var navigation = responsiveNav(".nav-collapse", {
+            init: function () {
+                console.log("Responsive Nav Inited!");
+            },
+            open: function () {
+                console.log("Opening…");
+            },
+            close: function () {
+                console.log("Closing…");
+            }
+        });
 
 document.getElementById('submit-post').addEventListener('click', function() {
     const title = document.getElementById('post-title').value;

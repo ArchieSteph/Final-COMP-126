@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
+    <link rel="common stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apointment.css">
+    <title> Contact </title>
+</head>
+
+<body>
+    <header>
+        <div class="title"> Apointment part of a marvelous website </div>
+        <nav class="nav-collapse">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <div class="survey">
+            <form method="post" action="/">
+
+                <div class="restaurant">
+                    <h1 class="title1">La Maison de Fleur</h1>
+                    <p class="description">
+                        Welcome to La Maison de Fleur, a restaurant where the elegance of flowers meets the art of fine dining. 
+                        Experience a vibrant ambiance, surrounded by beautiful floral arrangements that bring life to every meal.<br>
+                        Email:LaMaison@food.unc.edu<br>
+                        Mobile:919 999 9969
+                    </p>
+                    <div class="hours">
+                        <h2>Opening Hours</h2>
+                        <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+                    </div>
+                    <a href="https://www.google.com/maps" class="button">Show Location</a>
+                </div>
+                
+        
+                <legend id="h1">
+                    <h1>Seat Reservation</h1>
+                </legend>
+                
+                <fieldset>
+                    <legend>
+                        Personal Information
+                    </legend>
+                <br>
+
+                <div>
+                    <label for "username"> Name: </label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+        
+                <div>
+                    <label for "username"> Date: </label>
+                    <input type="date" name="name" id="name"/>
+                </div>
+                <br>
+        
+                <div>
+                    <label for "email"> Email: </label>
+                        <input type="email" name="email" id="email" placeholder="xxx@unc.edu" />
+                </div>
+                <br>
+            
+                <div>
+                    <label for="number"> Phone Number: </label>
+                        <input type="number" name="Phone" id="Phone" />
+                </div>
+
+                <div>
+                    <label for="number"> Number of Guests: </label>
+                        <input type="number" name="Phone" id="Phone" />
+                </div>
+                
+                <legend>
+                Notes
+                </legend>
+                <div>
+                    <label for="reasons"> Intended Choices of Dishes: </label>
+                        <textarea id="reasons" name="reasons"> </textarea>
+                </div>
+                
+                <div>
+                    <label for="Questions"> Any Suggestions for us: </label>
+                        <textarea id="question" name="question"> </textarea>
+                </div>
+                </fieldset>
+                <div> 
+                    <a href="Submitted.html" class="button">Submit</a>
+                </div>
+        
+            </form>
+        </div>
+        
+    </main>
+    
+
+    <script>
+        var navigation = responsiveNav(".nav-collapse", {
+            init: function () {
+                console.log("Responsive Nav Inited!");
+            },
+            open: function () {
+                console.log("Opening…");
+            },
+            close: function () {
+                console.log("Closing…");
+            }
+        });
+    </script>
+
+</body>
+</html>

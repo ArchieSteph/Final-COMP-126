@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
+    color: #00153B;
+    background-image: url('backimage1.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 html, body {
@@ -29,7 +33,7 @@ a:hover {
 }
 
 header {
-    background-color: #333;
+    background-color: #00153B;
     color: white;
     padding: 0px 0;
     text-align: center;
@@ -78,13 +82,17 @@ html, body {
 
 .content-area {
     margin-bottom: 40px;
+    background-color: #c8ede7;
+    background-size: cover; 
+    background-repeat: repeat-y;
+    background-position: center; 
 }
 
 .content-title {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
-    color: orange;
+    color: #00153B;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
@@ -115,14 +123,14 @@ html, body {
 }
 
 .form-group button {
-    background-color: #ff9500;
+    background-color: #1ca9c9;
     color: white;
     cursor: pointer;
     border: none;
 }
 
 .form-group button:hover {
-    background-color: #b32d00;
+    background-color: #00153B;
 }
 
 .post-card {
@@ -145,7 +153,7 @@ button {
     margin: 10px auto; 
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ff9500;
+    background-color: #1ca9c9;
     color: white;
     border: none;
     border-radius: 5px;
@@ -154,7 +162,7 @@ button {
 }
 
 button:hover {
-    background-color: #b32d00;
+    background-color: #00153B;
 }
 
 .post-card h4 {
@@ -226,6 +234,11 @@ button:hover {
     gap: 10px; 
     margin: 10px 0; 
     width: 100%;
+    margin-bottom: 40px;
+    background-color: #c6dbf4;
+    background-size: cover; 
+    background-repeat: repeat-y;
+    background-position: center;
 }
 
 
@@ -257,7 +270,7 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #00153B;
     color: white;
     text-align: center;
     padding: 0px 0;

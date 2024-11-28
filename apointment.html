@@ -23,25 +23,26 @@
     </header>
 
     <main>
+    <div class="parent-container">
+        <div class="restaurant">
+            <h1 class="title1">La Maison de Fleur</h1>
+            <p class="description">
+                Welcome to La Maison de Fleur, a restaurant where the elegance of flowers meets the art of fine dining. 
+                Experience a vibrant ambiance, surrounded by beautiful floral arrangements that bring life to every meal.<br>
+                Email:LaMaison@food.unc.edu<br>
+                Mobile:919 999 9969
+            </p>
+            <div class="hours">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+            </div>
+            <a href="https://www.google.com/maps" class="button">Show Location</a>
+        </div>
+    </div>
+        
         <div class="survey">
             <form method="post" action="/">
-
-                <div class="restaurant">
-                    <h1 class="title1">La Maison de Fleur</h1>
-                    <p class="description">
-                        Welcome to La Maison de Fleur, a restaurant where the elegance of flowers meets the art of fine dining. 
-                        Experience a vibrant ambiance, surrounded by beautiful floral arrangements that bring life to every meal.<br>
-                        Email:LaMaison@food.unc.edu<br>
-                        Mobile:919 999 9969
-                    </p>
-                    <div class="hours">
-                        <h2>Opening Hours</h2>
-                        <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
-                        <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
-                    </div>
-                    <a href="https://www.google.com/maps" class="button">Show Location</a>
-                </div>
-                
         
                 <legend id="h1">
                     <h1>Seat Reservation</h1>
@@ -99,10 +100,11 @@
         
             </form>
         </div>
+
+        
         
     </main>
     
-
     <script>
         var navigation = responsiveNav(".nav-collapse", {
             init: function () {

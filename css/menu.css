@@ -65,11 +65,3 @@ main {
     }
 }
 
-footer {
-    position: fixed;
-    text-align: center;
-    padding: 1em;
-    color: #fff;
-    margin-top: 2em; /* Add spacing above the footer */
-    position: relative; /* Ensure the footer is part of the normal flow */
-}

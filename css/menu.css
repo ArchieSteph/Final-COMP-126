@@ -15,6 +15,7 @@ body {
 
 main {
     padding: 2em;
+    height: auto;
 }
 
 .menu-category {
@@ -64,4 +65,3 @@ main {
         text-align: left;
     }
 }
-

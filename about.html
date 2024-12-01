@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
+    <link rel="common stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title> About Us - La Maison de Fleur </title>
+</head>
+
+<body>
+    <header>
+        <div class="title">La Maison de Fleur </div>
+        <nav class="nav-collapse">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+       <h1>About</h1>
+       
+       <section class="history"> 
+        
+        <div class="content">
+            <h1>Our Story</h1>
+            <br>
+            <p>
+                Since opening its doors in 2015, La Maison de Fleur has been a celebration of the art of French cuisine. Nestled in the heart of the city, our restaurant is inspired by the timeless elegance of France and its culinary traditions. Every dish we serve is a tribute to the sophistication and warmth of French culture, blending classic techniques with a modern flair.
+            </p>
+            <br>
+            <p>
+                Our journey began with a passion for bringing people together over exquisite meals. From our carefully curated seasonal menus to our signature tasting experiences, we aim to create moments that linger in memory. Each ingredient is thoughtfully sourced, ensuring the finest quality and the freshest flavors in every bite.
+            </p>
+            <br>
+            <p>
+                At La Maison de Fleur, the ambiance is as important as the food itself. Guests are welcomed into an intimate, inviting space that echoes the charm of a Parisian bistro, with soft lighting, elegant décor, and the delicate aroma of freshly baked bread. Whether you're celebrating a special occasion or simply indulging in an evening of fine dining, we strive to make every visit unforgettable.
+            </p>
+    <br>
+            <p>
+                Our mission remains the same: to honor the rich heritage of French cuisine while embracing innovation and creativity. We invite you to join us on this journey, where every meal is a celebration of taste, tradition, and togetherness.
+            </p>
+        </div>
+        <div class="image-container">
+            <img class="scalable" src="image/image1.png" alt="Something Important">
+            <img class="scalable" src="image/image2.png" alt="Something Important">
+            <img class="scalable" src="image/image3.png" alt="Something Important">
+        </div>
+    </section>
+    
+        
+        <section class="philosophy">
+            
+            <div class = "Philosophycontent">
+                <h1>Our Philosophy</h1>
+                <br>
+                <p>At La Maison de Fleur, we believe every meal is a journey through flavors, textures, and memories. Guided by a commitment to the freshest ingredients, locally sourced produce, and classic French techniques, we strive to craft dishes that are as beautiful as they are delicious.</p>
+                <blockquote>“Cooking is an art, and we are the artists.”</blockquote>
+            </div>
+            <div class = "imagecon">
+                <img class="scalable" src="image/image4.png" alt="Something Important">
+            </div>
+        </section>
+
+            
+        <section class="chef">
+            <h1>Meet Our Chefs</h1>
+            <div class="chef-container">
+                <!-- 第一位 Chef -->
+                <div class="chef-card">
+                    <h2>Chef Pierre Dubois</h2>
+                    <img class="scalable" src="image/image5.png" alt="Something Important">
+                    <p>
+                        Chef Pierre Dubois, the heart behind La Maison de Fleur, brings over 20 years of culinary expertise to your plate. Born and raised in Provence, Pierre is passionate about creating modern interpretations of traditional French dishes.
+                    </p>
+                    <p>
+                        His specialties include a signature *Bouillabaisse* and a delicate *Tarte Tatin*, blending the warmth of tradition with a touch of innovation.
+                    </p>
+                </div>
+                <!-- 第二位 Chef -->
+                <div class="chef-card">
+                    <h2>Chef Marie Fontaine</h2>
+                    <img class="scalable" src="image/image6.png" alt="Something Important">
+                    <p>
+                        Chef Marie Fontaine is a rising star in the culinary world, known for her innovative desserts and exquisite pastry creations. Her journey started in Paris, where she honed her craft at prestigious patisseries.
+                    </p>
+                    <p>
+                        Her specialties include a velvety *Crème Brûlée* and a delightful *Macaron Tower*, showcasing her love for precision and artistry.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p> @ COMP 126 Final Project Footer </p>
+    </footer>
+
+    <script>
+        var navigation = responsiveNav(".nav-collapse", {
+            init: function () {
+                console.log("Responsive Nav Inited!");
+            },
+            open: function () {
+                console.log("Opening…");
+            },
+            close: function () {
+                console.log("Closing…");
+            }
+        });
+    </script>
+
+</body>
+</html>

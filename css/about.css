@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  height: auto;
+  padding: 20px; 
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;       
+  align-items: center;
+  padding: 20px; 
+  max-width: 100%; 
+  margin: 0 auto; 
+
+}
+
+.scalable{
+  width: 100%;
+  height:auto;
+  border-radius: 10px;
+}
+
+.history{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 40px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding:10px;
+}
+.philosophy{
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding:10px;
+}
+.chef{
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding:10px;
+}
+
+
+
+.chef-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  
+}
+
+
+/* Chef Card 容器 */
+.chef-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  gap: 20px; /* 卡片之间的间距 */
+  flex-wrap: wrap; /* 小屏幕时卡片自动换行 */
+}
+
+/* 每张 Chef 卡片样式 */
+.chef-card {
+  text-align:left;
+  width: 200px; /* 设置卡片宽度 */
+  margin: 10px;
+}
+
+
+.chef-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Chef 名字 */
+.chef-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .history {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 80%; 
+  margin: 0 auto; 
+}
+.scalable {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.philosophy{
+  flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 40px;
+
+}
+
+.chef-container {
+  display: flex;
+  flex-direction: row; 
+  gap: 40px; 
+  justify-content: space-between; 
+  align-items: stretch; 
+}
+
+.chef-card {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  gap: 20px; 
+  text-align: left; 
+}
+
+.chef-card img {
+  width: 100%; 
+  max-width: 300px; 
+  height: 200px; 
+  border-radius: 10px; 
+  object-fit: cover; 
+}
+
+
+
+
+
+
+}

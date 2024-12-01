@@ -5,7 +5,6 @@ header {
 body {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
     color: #333;
     background-image: url('f.jpg');
     background-size: cover;
@@ -38,7 +37,7 @@ main {
 
 .menu-category h2 {
     font-size: 30px;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid #00153B;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     font-family: 'Courier New', Courier;
@@ -135,17 +134,6 @@ main {
     text-align: center;
     margin: 2em 0;
 }
-
-#forum {
-    margin: 1em;
-    padding: 1.5em;
-    background-color: rgba(255, 255, 255, 0.856);
-    border: 2px solid #0eb1d2;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
 
 footer {
     background-color: #00153B;

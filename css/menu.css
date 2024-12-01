@@ -25,7 +25,7 @@ main {
     padding: 1em;
     height: auto;
     margin: 1em;
-    background-color: rgba(255, 255, 255, 0.853);
+    background-color: rgba(255, 255, 255, 0.856);
     border: 2px solid #0eb1d2;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -86,7 +86,7 @@ main {
 #menu-info {
     margin: 1em;
     padding: 1.5em;
-    background-color: #7eedf1d9;
+    background-color: rgba(255, 255, 255, 0.856);
     border: 2px solid  #0eb1d2;
     border-radius: 5px;
     font-size: 1rem;
@@ -104,6 +104,48 @@ main {
     margin: 0.5em 0;
     color: black;
 }
+
+.button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    color: black;
+    background-color: #f1d87e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #384bba;
+    color: white;
+    transform: scale(1.05);
+}
+
+.button:focus {
+    outline: 2px solid #ffcc80;
+    background-color: #fbc02d;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#forum-button-section {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#forum {
+    margin: 1em;
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 2px solid #0eb1d2;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 
 footer {
     background-color: #00153B;

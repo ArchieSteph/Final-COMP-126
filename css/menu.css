@@ -7,6 +7,11 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    background-image: url('f.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main-title h1 {
@@ -17,8 +22,14 @@ body {
 }
 
 main {
-    padding: 2em;
+    padding: 1em;
     height: auto;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.853);
+    border: 2px solid #0eb1d2;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
 }
 
 .menu-category {
@@ -75,7 +86,7 @@ main {
 #menu-info {
     margin: 1em;
     padding: 1.5em;
-    background-color: #7eeef1;
+    background-color: #7eedf1d9;
     border: 2px solid  #0eb1d2;
     border-radius: 5px;
     font-size: 1rem;
@@ -85,13 +96,13 @@ main {
 #menu-info h4 {
     font-size: 1.5rem;
     margin-bottom: 1em;
-    color: #333;
+    color: black;
     text-align: center;
 }
 
 #menu-info p {
     margin: 0.5em 0;
-    color: #555;
+    color: black;
 }
 
 footer {

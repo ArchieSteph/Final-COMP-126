@@ -1,16 +1,19 @@
+header {
+    background-color: #00153B;
+}
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
 }
 
-.main-tittle h1 {
+.main-title h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 35px;
     color: black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 main {
@@ -23,10 +26,11 @@ main {
 }
 
 .menu-category h2 {
-    font-size: 1.5rem;
+    font-size: 30px;
     border-bottom: 2px solid #e5e5e5;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
+    font-family: 'Courier New', Courier;
 }
 
 .menu-item {
@@ -40,19 +44,21 @@ main {
     font-size: 1.2rem;
     margin: 0;
     flex: 2;
+    font-family: 'Courier New', Courier;
 }
 
 .description {
     flex: 3;
     margin-left: 1em;
-    color: #555;
+    color: black;
+    font-family: 'Courier New', Courier
 }
 
 .price {
     flex: 1;
     text-align: right;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,4 +70,30 @@ main {
         margin-left: 0;
         text-align: left;
     }
+}
+
+#menu-info {
+    margin: 1em;
+    padding: 1.5em;
+    background-color: #7eeef1;
+    border: 2px solid  #0eb1d2;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#menu-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    color: #333;
+    text-align: center;
+}
+
+#menu-info p {
+    margin: 0.5em 0;
+    color: #555;
+}
+
+footer {
+    background-color: #00153B;
 }

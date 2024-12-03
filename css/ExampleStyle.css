@@ -1,0 +1,63 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.survey{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 40%;
+    margin: 25px auto;
+    border-radius: 50px;
+}
+
+form{
+    margin: 30px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+#h1{
+    text-align: center;
+}
+
+input, select, textarea{
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px 0;
+    background-color: white;
+}
+
+textarea{
+    height: 50px;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 30px;
+    border: dashed 3px white;
+}
+
+button{
+    background-color: rgb(234, 239, 161);
+    width: 50%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 2px black;
+    margin: 0 auto;
+}
+
+button:hover, button:focus{
+    font-weight: bold;
+    background-color: yellow;
+    border: 3px solid white;
+}

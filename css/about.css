@@ -1,0 +1,202 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  height: auto;
+  padding: 20px; 
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;       
+  align-items: center;
+  padding: 20px; 
+  max-width: 100%; 
+  margin: 0 auto; 
+}
+.image-container :hover{
+  transform: scale(1.2);
+}
+
+.scalable{
+  width: 100%;
+  height:auto;
+  border-radius: 10px;
+}
+
+.history{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 40px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding:10px;
+}
+.philosophy{
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding:10px;
+     
+}
+
+.Philosophycontent blockquote {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  font-style: italic; 
+  text-align: center;
+  color: #555; 
+  border-left: 5px solid #ccc; 
+  padding: 10px 20px; 
+  margin: 20px auto; 
+  max-width: 600px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px; 
+}
+
+/* .blockquote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.imagecon :hover{
+  transform: scale(1.1);
+}
+
+.chef{
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding:10px;
+}
+
+
+
+.chef-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  
+}
+
+
+.chef-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  
+}
+
+
+.chef-card {
+  text-align:left;
+  width: 200px;
+  margin: 10px;
+ 
+}
+
+
+.chef-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 200ms;
+  
+}
+.chef-card img:hover{
+  box-shadow: 5px 5px aqua, 6px 6px aqua, 7px 7px aqua;
+  transform: translateY(-10px);
+}
+
+.chef-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .history {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 80%; 
+  margin: 0 auto; 
+}
+.scalable {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.philosophy{
+  flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 40px;
+
+}
+
+.chef-container {
+  display: flex;
+  flex-direction: row; 
+  gap: 40px; 
+  justify-content: space-between; 
+  align-items: stretch; 
+}
+
+.chef-card {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  gap: 20px; 
+  text-align: left; 
+}
+
+.chef-card img {
+  width: 100%; 
+  max-width: 300px; 
+  height: 200px; 
+  border-radius: 10px; 
+  object-fit: cover; 
+}
+
+
+
+
+
+
+}

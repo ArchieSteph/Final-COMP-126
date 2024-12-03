@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,9 @@ main{
   padding: 20px; 
   max-width: 100%; 
   margin: 0 auto; 
-
+}
+.image-container :hover{
+  transform: scale(1.2);
 }
 
 .scalable{
@@ -46,7 +48,34 @@ main{
     margin: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
      padding:10px;
+     
 }
+
+.Philosophycontent blockquote {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  font-style: italic; 
+  text-align: center;
+  color: #555; 
+  border-left: 5px solid #ccc; 
+  padding: 10px 20px; 
+  margin: 20px auto; 
+  max-width: 600px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px; 
+}
+
+/* .blockquote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.imagecon :hover{
+  transform: scale(1.1);
+}
+
 .chef{
   display: flex;
     flex-direction: column;
@@ -68,19 +97,20 @@ main{
 }
 
 
-/* Chef Card 容器 */
 .chef-container {
   display: flex;
-  justify-content: center; /* 水平居中 */
-  gap: 20px; /* 卡片之间的间距 */
-  flex-wrap: wrap; /* 小屏幕时卡片自动换行 */
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  
 }
 
-/* 每张 Chef 卡片样式 */
+
 .chef-card {
   text-align:left;
-  width: 200px; /* 设置卡片宽度 */
+  width: 200px;
   margin: 10px;
+ 
 }
 
 
@@ -91,9 +121,14 @@ main{
   object-fit: cover; 
   border: 3px solid #ccc; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 200ms;
+  
+}
+.chef-card img:hover{
+  box-shadow: 5px 5px aqua, 6px 6px aqua, 7px 7px aqua;
+  transform: translateY(-10px);
 }
 
-/* Chef 名字 */
 .chef-card h2 {
   font-size: 1.2rem;
   color: #333;

@@ -1,0 +1,140 @@
+header {
+    background-color: #00153B;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('f.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-title h1 {
+    margin: 0;
+    font-size: 35px;
+    color: black;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+main {
+    padding: 1em;
+    height: auto;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 2px solid #0eb1d2;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.menu-category {
+    margin-bottom: 2em;
+}
+
+.menu-category h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #00153B;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-family: 'Courier New', Courier;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    flex: 2;
+    font-family: 'Courier New', Courier;
+}
+
+.description {
+    flex: 3;
+    margin-left: 1em;
+    color: black;
+    font-family: 'Courier New', Courier
+}
+
+.price {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .description, .price {
+        margin-left: 0;
+        text-align: left;
+    }
+}
+
+#menu-info {
+    margin: 1em;
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 2px solid  #0eb1d2;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#menu-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    color: black;
+    text-align: center;
+}
+
+#menu-info p {
+    margin: 0.5em 0;
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    color: black;
+    background-color: #f1d87e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #384bba;
+    color: white;
+    transform: scale(1.05);
+}
+
+.button:focus {
+    outline: 2px solid #ffcc80;
+    background-color: #fbc02d;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#forum-button-section {
+    text-align: center;
+    margin: 2em 0;
+}
+
+footer {
+    background-color: #00153B;
+}

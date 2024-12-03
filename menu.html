@@ -1,48 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/responsive-nav.css">
-    <script src="js/responsive-nav.js"></script>
-    <link rel="common stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <title> Menu </title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/responsive-nav.css">
+        <script src="js/responsive-nav.js"></script>
+        <link rel="common stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <title> Menu </title>
+    </head>
+    <body>
+        <header>
+            <div class="title"> La Maison de Fleur </div>
+            <nav class="nav-collapse">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
 
-<body>
-    <header>
-        <div class="title"> a marvelous website </div>
-        <nav class="nav-collapse">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
+        <main>
+            <section class="main-title">
+                <h1>Seasonal Menu</h1>
+            </section>
 
-    <main>
+            <section class="menu-category">
+                <h2>Appetizers</h2>
+                <div class="menu-item">
+                    <h3>Velouté aux Lentilles</h3>
+                    <p class="description">Red lentil soup, feta crumble, microgreens</p>
+                    <p class="price">15</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Salade d'Hiver</h3>
+                    <p class="description">Arugula, endives, pears, cranberries, Gorgonzola, almonds, balsamic dressing</p>
+                    <p class="price">16</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Terrine Maison</h3>
+                    <p class="description">House-made foie gras, green tomato marmalade</p>
+                    <p class="price">15</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Moules & Frites</h3>
+                    <p class="description">P.E.I. mussels, Marinière sauce, homemade fries</p>
+                    <p class="price">15</p>
+                </div>
+            </section>
+        
+            <section class="menu-category">
+                <h2>La Terre</h2>
+                <div class="menu-item">
+                    <h3>Canard Balsamique</h3>
+                    <p class="description">Roasted duck breast, balsamic beets, parsnip purée, plum sauce</p>
+                    <p class="price">34</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Veau à la Crème</h3>
+                    <p class="description">Braised veal, creamy sauce, mushrooms, carrots, basmati rice</p>
+                    <p class="price">36</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Côte de Bœuf</h3>
+                    <p class="description">10oz ribeye, French fries, green salad, peppercorn sauce</p>
+                    <p class="price">35</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Venaison au Vin Rouge</h3>
+                    <p class="description">Venison, sweet potato gratin, Brussels sprouts, red wine sauce</p>
+                    <p class="price">46</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Poule d'Automne</h3>
+                    <p class="description">Maple-glazed Cornish hen, autumn vegetables, sage</p>
+                    <p class="price">38</p>
+                </div>
+            </section>
+        
+            <section class="menu-category">
+                <h2>Les Desserts</h2>
+                <div class="menu-item">
+                    <h3>La Crème brûlée</h3>
+                    <p class="description">Cardamom Cake, Dolce De Leche, Candied Walnuts, Persimmon Pearls, Walnut Rum Ice Cream</p>
+                    <p class="price">14</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Crème Anglaise Flottante</h3>
+                    <p class="description">Vanilla Ice Cream, 5 Spice Anglaise</p>
+                    <p class="price">11</p>
+                </div>
+                <div class="menu-item">
+                    <h3>La Dame Blanche</h3>
+                    <p class="description">vanilla ice cream, whipped cream, warm molten chocolate</p>
+                    <p class="price">11</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Fondant au Chocolat</h3>
+                    <p class="description">chocolate molten cake</p>
+                    <p class="price">10</p>
+                </div>
+            </section>
 
-    </main>
-    
-    <footer>
-        <p> @ COMP 126 Final Project Footer </p>
-    </footer>
+            <section class="main-title">
+                <h1>Seasonal Wine</h1>
+            </section>
 
-    <script>
-        var navigation = responsiveNav(".nav-collapse", {
-            init: function () {
-                console.log("Responsive Nav Inited!");
-            },
-            open: function () {
-                console.log("Opening…");
-            },
-            close: function () {
-                console.log("Closing…");
-            }
-        });
-    </script>
+            <section class="menu-category">
+                <h2>Rosés</h2>
+                <div class="menu-item">
+                    <h3>Peyrassol 'Cuvée des Commandeurs'</h3>
+                    <p class="description">Côtes de Provence, France</p>
+                    <p class="price">21</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Fattoria Sardi '11 Primavere'</h3>
+                    <p class="description">Tuscany, Italy</p>
+                    <p class="price">19</p>
+                </div>
+            </section>
 
-</body>
+            <section class="menu-category">
+                <h2>Blanc</h2>
+                <div class="menu-item">
+                    <h3>Sauvignon Blanc</h3>
+                    <p class="description">Résery Tuand, Loire</p>
+                    <p class="price">17</p>
+                </div>
+            </section>
+
+            <section class="menu-category">
+                <h2>Champagne</h2>
+                <div class="menu-item">
+                    <h3>Camille Savès 'Carte Blanche' Grand Cru</h3>
+                    <p class="description">Bouzy, France</p>
+                    <p class="price">25</p>
+                </div>
+            </section>
+        </main>
+
+        <section id="menu-info">
+            <h4>Important Information</h4>
+            <p>Please note that our menu is seasonal, and items may change based on the availability of ingredients. We strive to use fresh, locally sourced produce to enhance your dining experience.</p>
+            <p>If you have any allergies or dietary restrictions, please inform your server before ordering. We will do our best to accommodate your needs.</p>
+        </section>
+        
+        <section id="forum-button-section">
+            <a href="css/forum.css" class="button">Visit Our Forum</a>
+            <a href="#reservation" class="button reservation-button">Reservation</a>
+    </section>
+        </section>
+
+        <footer>
+            <div class="comp">
+                <p>  &#169 2024 Copyright by La Maison de Fleur </p>
+            </div>
+        </footer>
+
+        <script>
+            var navigation = responsiveNav(".nav-collapse", {
+                init: function () {
+                    console.log("Responsive Nav Inited!");
+                },
+                open: function () {
+                    console.log("Opening…");
+                },
+                close: function () {
+                    console.log("Closing…");
+                }
+            });
+        </script>
+
+    </body>
 </html>

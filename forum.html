@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="title"> a marvelous website </div>
+        <div class="title"> The forum part of a marvelous website </div>
         <nav class="nav-collapse">
         <ul>
             <li><a href="#">Home</a></li>
@@ -23,15 +23,64 @@
     </header>
 
     <main>
+        <section class="content-area" id="submission-section">
+            <h2 class="content-title">Share Your Culinary Experiences at La Maison de Fleur!</h2>
 
+            <img src="css/imageFlower.png" alt="Divider Image" class="divider-image1">
+
+            <form id="submission-form">
+                <div class="form-group">
+                    <label for="post-title">Post Title:</label>
+                    <input type="text" id="post-title" placeholder="Enter a nice title!" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-description">Description:</label>
+                    <textarea id="post-description" placeholder="Write something about your dish!" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="post-image">Upload Image:</label>
+                    <input type="file" id="post-image" accept="image/*">
+                </div>
+                <button type="button" id="submit-post">Submit</button>
+            </form>
+            <h3>Featured Posts</h3>
+            <div id="featured-posts"></div>
+        </section>
+
+        <img src="css/imageFlower2.png" alt="Divider Image" class="divider-image">
+
+        <section class="content-area" id="forum-section"></section>
+            <h2 class="content-title">Food Forum</h2>
+            <div id="forum-topics">
+            </div>
+            <form id="forum-form">
+                <div class="form-group">
+                    <label for="forum-topic">New Topic Here</label>
+                    <input type="text" id="forum-topic" placeholder="Enter a discussion topic" required>
+                </div>
+                <button type="button" id="add-topic">Add Topic</button>
+            </form>
+        </section>
+
+        
+        
+        <div id="reply-form-container" style="display: none;">
+            <form id="reply-form">
+                <textarea id="reply-text" placeholder="Write your reply here..."></textarea>
+                <button type="button" id="submit-reply">Submit Reply</button>
+                <button type="button" id="close-reply">Cancel</button>
+            </form>
+        </div>
     </main>
     
+    
     <footer>
-        <p> @ COMP 126 Final Project Footer </p>
+        <p> Great Food Website @ COMP 126 Final Project</p>
     </footer>
 
     <script>
-        var navigation = responsiveNav(".nav-collapse", {
+
+var navigation = responsiveNav(".nav-collapse", {
             init: function () {
                 console.log("Responsive Nav Inited!");
             },
@@ -42,6 +91,84 @@
                 console.log("Closing…");
             }
         });
+
+document.getElementById('submit-post').addEventListener('click', function() {
+    const title = document.getElementById('post-title').value;
+    const description = document.getElementById('post-description').value;
+    const imageInput = document.getElementById('post-image');
+    const postsContainer = document.getElementById('featured-posts');
+
+    if (title && description) {
+        const postCard = document.createElement('div');
+        postCard.className = 'post-card';
+        let imagePreview = '';
+        if (imageInput.files.length > 0) {
+            const imageURL = URL.createObjectURL(imageInput.files[0]);
+            imagePreview = `<img src="${imageURL}" alt="${title}">`;
+        }
+        
+        postCard.innerHTML = `
+            ${imagePreview}
+            <h4>${title}</h4>
+            <p>${description}</p>
+        `;
+        postsContainer.appendChild(postCard);
+
+        document.getElementById('submission-form').reset();
+    } else {
+        alert('Please fill in both the title and description!');
+    }
+});
+
+        document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('forum-reply')) {
+        const replySection = e.target.nextElementSibling;
+        replySection.style.display = replySection.style.display === 'none' ? 'block' : 'none';
+    }
+
+    if (e.target.classList.contains('submit-reply')) {
+        const replyText = e.target.previousElementSibling.value.trim();
+        if (replyText !== '') {
+            const replyDiv = document.createElement('div');
+            replyDiv.textContent = `Reply: ${replyText}`;
+            replyDiv.style.marginTop = '10px';
+            replyDiv.style.padding = '5px';
+            replyDiv.style.border = '1px solid #ddd';
+            replyDiv.style.borderRadius = '5px';
+            replyDiv.style.backgroundColor = '#f9f9f9';
+            const topicContainer = e.target.closest('.forum-topic');
+            topicContainer.appendChild(replyDiv);
+            e.target.previousElementSibling.value = '';
+            e.target.parentElement.style.display = 'none';
+        } else {
+            alert('Reply cannot be empty!');
+        }
+    }
+});
+
+document.getElementById('add-topic').addEventListener('click', function() {
+    const topic = document.getElementById('forum-topic').value.trim();
+    const topicsContainer = document.getElementById('forum-topics');
+
+    if (topic !== '') {
+        const topicDiv = document.createElement('div');
+        topicDiv.className = 'forum-topic';
+        topicDiv.innerHTML = `
+            <span>${topic}</span>
+            <button class="forum-reply">Reply</button>
+            <div class="reply-section" style="display: none; margin-top: 10px;">
+                <textarea class="reply-text" placeholder="Write your reply..."></textarea>
+                <button class="submit-reply">Submit Reply</button>
+            </div>
+        `;
+        topicsContainer.appendChild(topicDiv);
+
+        document.getElementById('forum-form').reset();
+    } else {
+        alert('Topic cannot be empty!');
+    }
+});
+
     </script>
 
 </body>

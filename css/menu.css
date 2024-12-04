@@ -142,18 +142,6 @@ footer {
     background-color: #00153B;
 }
 
-@media screen and (max-width: 768px) {
-
-    .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .description, .price {
-        margin-left: 0;
-        text-align: left;
-    }
-}
-
 @media screen and (min-width: 768px) {
     body {
         display: grid;
@@ -184,5 +172,17 @@ footer {
     #menu-info {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .description, .price {
+        margin-left: 0;
+        text-align: left;
     }
 }

@@ -354,27 +354,30 @@ label:required {
     color: yellow;
 }
 
-button {
+.postbutton{
     padding: 19px 39px 18px 39px;
-    color: #fff;
     background-color: #1a8ca5;
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
     border: none;
-    width: 90%;
-    transition: all 0.5s ease;
+    width: 60%;
+    transition: all 200ms ease;
     cursor: pointer;
 }
 
-button:hover,
-button:focus {
+.postbutton a{
+    color: white;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+.postbutton:hover, .postbutton:focus, .postbutton a:hover, .postbutton a:focus {
     background-color: #1ca9c9;
     color: white;
     font-weight: bold;
     border-color: #8a97a0;
-    
 }
 
 fieldset {

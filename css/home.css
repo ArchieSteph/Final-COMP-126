@@ -29,7 +29,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    background-image: url(/image/_DSF1435.jpg) ;
+    background-image: url(_DSF1435.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -99,28 +99,28 @@ main{
 
 .cat1{
     grid-area: cat1;
-    background-image: url(/image/appetizers.jpg);
+    background-image: url(appetizers.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 .cat2{
     grid-area: cat2;
-    background-image: url(/image/entree.webp);
+    background-image: url(entree.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 .cat3{
     grid-area: cat3;
-    background-image: url(/image/dessert.jpg);
+    background-image: url(dessert.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 .cat4{
     grid-area: cat4;
-    background-image: url(/image/wine.jpg);
+    background-image: url(wine.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -161,7 +161,7 @@ main{
 }
 
 .appphoto{
-    background-image: url(/image/_DSF1434.jpg);
+    background-image: url(_DSF1434.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 30%;
@@ -233,7 +233,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    background-image: url(/image/_DSF1426.jpg) ;
+    background-image: url(_DSF1426.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -293,7 +293,7 @@ main{
 .subphoto{
     width: 30%;
     height: 400px;
-    background-image: url(/image/_DSF1603.jpg);
+    background-image: url(_DSF1603.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -354,7 +354,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    background-image: url(/image/forum.webp) ;
+    background-image: url(forum.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }

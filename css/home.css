@@ -29,7 +29,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    background-image: url(_DSF1435.jpg) ;
+    background-image: url(DSF1435.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -161,7 +161,7 @@ main{
 }
 
 .appphoto{
-    background-image: url(_DSF1434.jpg);
+    background-image: url(DSF1434.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 30%;
@@ -233,7 +233,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(85, 85, 85, 0.5);
-    background-image: url(_DSF1426.jpg) ;
+    background-image: url(DSF1426.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -293,7 +293,7 @@ main{
 .subphoto{
     width: 30%;
     height: 400px;
-    background-image: url(_DSF1603.jpg);
+    background-image: url(DSF1603.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

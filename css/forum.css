@@ -28,7 +28,7 @@ a {
     color: orange;
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration: underline;
 }
 
@@ -129,7 +129,7 @@ html, body {
     border: none;
 }
 
-.form-group button:hover {
+.form-group button:hover, .form-group button:focus{
     background-color: #00153B;
 }
 
@@ -161,7 +161,7 @@ button {
     text-align: center;
 }
 
-button:hover {
+button:hover, button:focus{
     background-color: #00153B;
 }
 
@@ -261,7 +261,7 @@ button:hover {
     margin-top: 20px; 
 }
 
-.forum-topic button:hover {
+.forum-topic button:hover, .forum-topic button:focus{
     background-color: rgb(42, 44, 165);
 }
 

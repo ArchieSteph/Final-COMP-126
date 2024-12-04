@@ -15,6 +15,25 @@ main{
   
 }
 
+.abouttitle{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(_DSF1426.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abouttitle h1{
+  color: #f1d871;
+  -webkit-text-stroke: black 2px;
+  font-size: 8vw;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
 .image-container {
   display: flex;
   flex-direction: column;  
@@ -114,7 +133,6 @@ main{
   justify-content: center; 
   gap: 20px; 
   flex-wrap: wrap; 
-  
 }
 
 
@@ -122,8 +140,6 @@ main{
   text-align:left;
   width: 200px;
   margin: 10px;
-
- 
 }
 
 

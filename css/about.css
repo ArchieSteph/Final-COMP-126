@@ -4,10 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
 main{
+  
   height: auto;
   padding: 20px; 
+  
 }
 
 .image-container {
@@ -19,7 +24,7 @@ main{
   max-width: 100%; 
   margin: 0 auto; 
 }
-.image-container :hover{
+.image-container :hover, .image-container:focus{
   transform: scale(1.2);
 }
 
@@ -79,7 +84,7 @@ main{
   align-items: center;
 } */
 
-.imagecon :hover{
+.imagecon :hover, .imagecon:focus{
   transform: scale(1.1);
 }
 

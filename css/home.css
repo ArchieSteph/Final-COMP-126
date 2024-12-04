@@ -316,12 +316,12 @@ form {
     border-radius: 8px;
 }
 
-h1 {
+form h1 {
     margin: 10px 0;
     text-align: center;
 }
 
-p{
+form p{
     margin-top: 30px;
     font-size: 16px;
 }

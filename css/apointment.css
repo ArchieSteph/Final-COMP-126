@@ -70,7 +70,7 @@ fieldset{
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     background-color: #00153B;
 }
 

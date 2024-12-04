@@ -161,12 +161,14 @@ main{
   align-items: center; 
   width:40%;
   margin: 0 auto; 
+  
   /* border:2px solid black; */
 }
 .scalable {
   width: 80%;
   height: auto;
   border-radius: 10px;
+  transition: transform ease 0.5s;
 }
 
 .philosophy{
@@ -201,6 +203,7 @@ main{
   height: 200px; 
   border-radius: 10px; 
   object-fit: cover; 
+  transition: transform ease 0.5s;
 }
 
 
